@@ -13,8 +13,8 @@ class PandasExample:
 
     @staticmethod
     def read_parquet_with_pandas():
-        # It does not work with S3 :(
-        return pd.read_parquet('s3://gumartinm-data-lake/events/wonderful/', engine='pyarrow')
+        # It does not work with folders :( only works with files :(
+        return pd.read_parquet('s3://gumartinm-data-lake/events/wonderful/file.parquet', engine='pyarrow')
 
     @staticmethod
     def read_parquet_with_wrangler():
