@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "==1.0.3"
+pyarrow = "==0.17.0"
+
+[dev-packages]
+pytest = "==5.4.2"
+pycodestyle = "==2.6.0"
+pylint = "==2.5.2"
+coverage = "==5.1"
+
+[requires]
+python_version = "3.7"
